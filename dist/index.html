@@ -1,0 +1,14 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1"><meta name=viewport content="width=640,user-scalable=no"><title>千店万众分销商</title><script src=static/js/jquery-3.2.1.min.js></script><link href=/static/css/app.ff3f404c168cee0ce5021b0ea240fa95.css rel=stylesheet></head><body><div id=app></div><script>document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+        WeixinJSBridge.call('hideOptionMenu');
+    });
+    $(function () {
+        // 输入框失去焦点兼容苹果系统
+        $('#app').on('blur','input,textarea,select',function(){
+            setTimeout(function () {
+                var hasFocus = $('input').is(':focus') || $('textarea').is(':focus') || $('select').is(':focus');
+                if (!hasFocus) {
+                    window.scroll(0,0);
+                }
+            },100);
+        });
+    })</script><script type=text/javascript src=/static/js/manifest.2ae2e69a05c33dfc65f8.js></script><script type=text/javascript src=/static/js/vendor.f95d0fb373db8947bd01.js></script><script type=text/javascript src=/static/js/app.8f6d10af620c48e4d5c4.js></script></body></html>

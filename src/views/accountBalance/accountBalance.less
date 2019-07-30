@@ -1,0 +1,117 @@
+@import '../../../static/less/common/index.less';
+@red: #d8351d;
+
+.scroll-wrapper {
+	position: absolute;
+	left: 0;
+	top: 82px;
+	bottom: 0;
+
+	width: 100%;
+
+	overflow: hidden;
+	background: #fff;
+	z-index: 1;
+
+	.wrapper {
+
+		
+
+		.balance {
+			padding: 30px 40px;
+
+			height: 37px;
+
+			color: #000;
+			font-size: 24px;
+
+			background: #fff;
+
+			.clearFix();
+
+			.balance-name {
+				float: left;
+			}
+
+			.balance-num {
+				float: right;
+			}
+		}
+
+		.form {
+			border-top: 10px solid #f5f9fa;
+
+			.form-item {
+				padding: 30px 40px;
+				height: 60px;
+
+				line-height: 60px;
+				font-size: 24px;
+
+				background: #fff;
+
+				.clearFix();
+
+				.form-left {
+					float: left;
+
+					width: 55%;
+					height: 100%;
+
+					.form-input {
+						display: block;
+						width: 100%;
+						height: 30px;
+						padding: 16px 15px;
+
+						font-size: 24px;
+
+						line-height: 30px;
+
+						background: #eeeeee;
+
+						border-radius: 10px;
+
+						&::-webkit-input-placeholder {
+							color: #aaa9a9;
+						}
+					}
+				}
+
+				.form-right {
+					float: right;
+
+					width: 25%;
+					height: 100%;
+
+					.form-btn {
+						display: block;
+						width: 100%;
+						height: 100%;
+
+						color: #fff;
+						font-size: 24px;
+						text-align: center;
+
+						border-radius: 10px;
+
+						background: @red;
+					}
+				}
+			}
+		}
+
+		.prompt {
+			padding: 0 40px;
+
+			font-size: 24px;
+			line-height: 40px;
+			color: #666666;
+		}
+
+		.form-submit {
+			margin-top: 100px;
+		}
+
+	}
+}

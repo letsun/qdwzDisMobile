@@ -1,0 +1,57 @@
+.picker {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 50%;
+  z-index: 999;
+  background: #d1d4db;
+  font-size: 25px;
+}
+.picker.showPicker-enter-active,
+.picker.showPicker-leave-active {
+  transition: transform 0.4s ease;
+}
+.picker.showPicker-enter,
+.picker.showPicker-leave-to {
+  transform: translate3d(0, 100%, 0);
+}
+.picker .picker-toolbar {
+  height: 73px;
+  background-color: #f0f1f3;
+  border-top: 1px solid #949899;
+  position: relative;
+}
+.picker .picker-toolbar a {
+  position: absolute;
+  top: 0;
+  width: 100px;
+  line-height: 73px;
+  text-align: center;
+  color: #0276d6;
+  font-size: 29px;
+}
+.picker .picker-toolbar .cancel-btn {
+  left: 0;
+}
+.picker .picker-toolbar .ok-btn {
+  right: 0;
+}
+.picker .picker-slot {
+  width: 100%;
+}
+.picker .picker-slot div {
+  width: 100%;
+  text-align: center;
+}
+.picker .picker-item {
+  font-size: 28px;
+}
+.picker .picker-center-highlight {
+  border-top: 1px solid #a7aab1;
+  border-bottom: 1px solid #a7aab1;
+}
+.picker .picker-center-highlight::before,
+.picker .picker-center-highlight::after {
+  display: none;
+}

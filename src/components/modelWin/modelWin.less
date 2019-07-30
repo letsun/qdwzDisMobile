@@ -1,0 +1,141 @@
+@import '../../../static/less/common/index.less';
+@red: #d8351d;
+
+.win-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+
+    transition: all .5s ease-in;
+
+    opacity: 1;
+    background-color: rgba(0, 0, 0, .4);
+    backdrop-filter: blur(30px);
+}
+
+.win-wrapper {
+    position: relative;
+    z-index: 2;
+
+    opacity: 1;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0 0 13px -7px #000;
+
+    width: 480px;
+
+    .title-wrapper {
+        width: 100%;
+        height: 109px;
+
+        text-align: center;
+        color: #fff;
+        line-height: 86px;
+        font-size: 27px;
+        font-weight: 700;
+
+        background: url("./10_1.png") no-repeat;
+        background-size: 100% 100%;
+
+        border-radius: 15px 15px 0 0;
+
+        overflow: hidden;
+    }
+
+    .content-wrapper {
+        padding: 15px;
+
+        text-align: center;
+        color: #000;
+        line-height: 40px;
+        font-size: 26px;
+
+        span {
+            width: 300px;
+            display: block;
+            margin: 0 auto;
+
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+
+    .btn-wrapper {
+        display: flex;
+        height: 75px;
+
+        border-top: 1px solid #d5d5d5;
+
+        line-height: 75px;
+
+        .btn {
+            box-sizing: border-box;
+
+            text-align: center;
+
+            color: #333;
+            font-size: 25px;
+
+            flex: 1;
+
+            &.btn-last {
+                &:last-child {
+                    border-left: 1px solid #d5d5d5;
+                }
+            }
+        }
+
+        .active {
+            color: @red;
+        }
+    }
+}
+
+/*.mask {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    transition: all .5s ease-in;
+
+    opacity: 1;
+    background-color: rgba(0, 0, 0, .4);
+    backdrop-filter: blur(30px);
+}*/
+
+.showWin {
+    animation: showWin .3s ease;
+}
+
+.showMask {
+    animation: showWin .3s ease;
+}
+
+@keyframes showWin {
+    0% {
+        transform: scale3d(1.2, 1.2, 1.2);
+
+        opacity: 0;
+    }
+    100% {
+        transform: scale3d(1, 1, 1);
+
+        opacity: 1;
+    }
+}
+

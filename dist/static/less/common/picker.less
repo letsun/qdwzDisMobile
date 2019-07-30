@@ -1,0 +1,60 @@
+.picker {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 50%;
+	z-index: 999;
+	background: #d1d4db;
+	font-size: 25px;
+	
+	&.showPicker-enter-active,
+	&.showPicker-leave-active {
+		transition: transform 0.4s ease;
+	}
+
+	&.showPicker-enter,
+	&.showPicker-leave-to {
+		transform: translate3d(0, 100%, 0);
+	}
+	.picker-toolbar {
+		height: 73px;
+		background-color: #f0f1f3;
+		border-top: 1px solid #949899;
+		position: relative;
+		a {
+			position: absolute;
+			top: 0;
+			width: 100px;
+			line-height: 73px;
+			text-align: center;
+			color: #0276d6;
+			font-size: 29px;
+		}
+		.cancel-btn {
+			left: 0;
+		}
+		.ok-btn {
+			right: 0;
+		}
+	}
+	.picker-slot {
+		width: 100%;
+		div {
+			width: 100%;
+			text-align: center;
+		}
+	}
+	.picker-item {
+		font-size: 28px;
+	}
+
+	.picker-center-highlight {
+		border-top: 1px solid #a7aab1;
+		border-bottom: 1px solid #a7aab1;
+		&::before,
+		&::after {
+			display: none;
+		};
+	}
+}

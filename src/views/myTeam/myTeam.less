@@ -1,0 +1,71 @@
+@import '../../../static/less/common/index.less';
+@red: #d8351d;
+
+
+.scroll-wrapper {
+	position: absolute;
+	left: 0;
+	top: 81px;
+	bottom: 0;
+	background: #f5f9fa;
+
+	width: 100%;
+
+	overflow: hidden;
+	z-index: 1;
+
+	.wrapper {
+
+		background: #fff;
+
+		.team-infor {
+
+			.team-item {
+				padding: 30px 40px;
+
+				font-size: 26px;
+				line-height: 40px;
+
+				background: #fff;
+
+				border-bottom: 1px solid #d5d5d5;
+
+				.clearFix();
+
+				&:last-child {
+					border-bottom: none;
+				}
+
+				.team-item-key {
+					float: left;
+
+					color: #000;
+				}
+
+				.team-item-val {
+					float: right;
+
+					color: #333;
+
+					.clearFix();
+
+					.rebate-num {
+						float: left;
+					}
+
+					.lxcy-icon {
+						float: left;
+
+						margin-left: 15px;
+						margin-right: -10px;
+
+						color: #ddd;
+						font-size: 40px;
+						line-height: 40px;
+						text-align: right;
+					}
+				}
+			}
+		}
+	}
+}

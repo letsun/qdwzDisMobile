@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=640, user-scalable=no">
+    <title>千店万众分销商</title>
+    <script src="static/js/jquery-3.2.1.min.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <script>
+    document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+        WeixinJSBridge.call('hideOptionMenu');
+    });
+    $(function () {
+        // 输入框失去焦点兼容苹果系统
+        $('#app').on('blur','input,textarea,select',function(){
+            setTimeout(function () {
+                var hasFocus = $('input').is(':focus') || $('textarea').is(':focus') || $('select').is(':focus');
+                if (!hasFocus) {
+                    window.scroll(0,0);
+                }
+            },100);
+        });
+    })
+    </script>
+  </body>
+</html>

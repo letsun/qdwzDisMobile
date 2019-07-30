@@ -1,0 +1,111 @@
+@import '../../../static/less/common/index.less';
+@red: #d8351d;
+
+.container {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #f5f9fa;
+}
+
+.withdraw-title {
+	position: absolute;
+	left: 0;
+	right: 0;
+	background-color: #f5f9fa;
+	top: 81px;
+	padding: 30px 40px;
+
+	font-size: 25px;
+	color: #666666;
+	line-height: 25px;
+
+	.clearFix();
+
+	.withdraw-title-left {
+		float: left;
+
+		width: 20%;
+
+		text-align: center;
+	}
+
+	.withdraw-title-mid {
+		float: left;
+
+		width: 30%;
+
+		text-align: center;
+	}
+
+	.withdraw-title-right {
+		float: left;
+
+		width: 50%;
+
+		text-align: center;
+	}
+}
+
+.scroll-wrapper {
+	position: absolute;
+	left: 0;
+	top: 167px;
+	bottom: 0;
+
+	width: 100%;
+
+	overflow: hidden;
+
+	.wrapper {
+
+		background: #f5f9fa;
+
+		.withdraw-list {
+
+			.withdraw-item {
+				padding: 30px 40px;
+
+				color: #000;
+				font-size: 23px;
+				line-height: 28px;
+
+				border-bottom: 1px solid #d5d5d5;
+
+				background: #fff;
+
+				.clearFix();
+
+				&:last-child {
+					border-bottom: none;
+				}
+
+				.withdraw-item-left {
+					float: left;
+
+					width: 20%;
+
+					text-align: center;
+				}
+
+				.withdraw-item-mid {
+					float: left;
+
+					width: 30%;
+
+					text-align: center;
+				}
+
+				.withdraw-item-right {
+					float: left;
+
+					width: 50%;
+
+					text-align: center;
+				}
+			}
+		}
+	}
+}

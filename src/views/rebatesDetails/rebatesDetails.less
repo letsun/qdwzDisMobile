@@ -1,0 +1,144 @@
+@import '../../../static/less/common/index.less';
+@red: #d8351d;
+
+.container {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	background: #f5f9fa;
+}
+
+.rebate-title {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 81px;
+	padding: 28px 40px;
+
+	font-size: 25px;
+	color: #666666;
+	background-color: #f5f9fa;
+	line-height: 28px;
+
+	.clearFix();
+
+
+
+	.rebate-title-left {
+		float: left;
+
+		width: 40%;
+
+		text-align: center;
+	}
+
+	.rebate-title-mid {
+		float: left;
+
+		width: 30%;
+
+		text-align: center;
+	}
+
+	.rebate-title-right {
+		float: left;
+
+		width: 30%;
+
+		text-align: center;
+	}
+}
+
+.scroll-wrapper {
+	position: absolute;
+	left: 0;
+	top: 165px;
+	bottom: 0;
+
+	width: 100%;
+
+	overflow: hidden;
+
+
+	.wrapper {
+
+
+		.rebate-list {
+			
+			.rebate-item {
+				padding: 30px 40px;
+
+				color: #000;
+				
+				line-height: 28px;
+
+				border-bottom: 1px solid #d5d5d5;
+
+				background: #fff;
+
+				.clearFix();
+
+				&:last-child {
+					border-bottom: none;
+				}
+
+				.rebate-item-wrapper {
+					width: 100%;
+					font-size: 0;
+				}
+
+				.rebate-item-left {
+					display: inline-block;
+					vertical-align: middle;
+
+					width: 40%;
+
+					text-align: center;
+					text-overflow: ellipsis;
+					overflow: hidden;
+					white-space: nowrap;
+
+					font-size: 26px;
+				}
+
+				.rebate-item-mid {
+					display: inline-block;
+					vertical-align: middle;
+
+					width: 30%;
+
+					text-align: center;
+
+					font-size: 26px;
+				}
+
+				.rebate-item-right {
+					display: inline-block;
+					vertical-align: middle;
+
+					width: 30%;
+					text-align: center;
+					font-size: 26px;
+
+					.clearFix();
+
+					.rad-btn {
+						
+						margin: 0 5%;
+						font-size: 24px;
+
+						color: @red;
+						text-decoration: underline;
+						
+					}
+
+					.active {
+						
+					}
+				}
+			}
+		}
+	}
+}

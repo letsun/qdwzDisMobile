@@ -1,0 +1,174 @@
+@import '../../fonts/iconfont.css';
+body,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+form {
+  margin: 0;
+  padding: 0;
+}
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body {
+  color: #333;
+  font: normal normal normal 28px/40px 'Microsoft YaHei', Arial, sans-serif;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz--tap-highlight-color: rgba(0, 0, 0, 0);
+  -o--tap-highlight-color: rgba(0, 0, 0, 0);
+}
+img {
+  border: 0;
+}
+input[type="text"],
+input[type="password"],
+textarea,
+button {
+  vertical-align: middle;
+  -webkit-appearance: none;
+  font-family: 'Microsoft YaHei', Arial, sans-serif;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  outline-style: none;
+  outline-color: invert;
+  outline-width: medium;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  outline: none;
+}
+table {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+table td {
+  padding: 0;
+}
+textarea {
+  resize: none;
+}
+.clearFix:before,
+.clearFix:after {
+  content: " ";
+  display: table;
+}
+.clearFix:after {
+  clear: both;
+}
+.ellipsisNormal {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.scroll-wrapper {
+  position: absolute;
+  left: 0;
+  top: 82px;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  z-index: 1;
+}
+.scroll-wrapper .wrapper .balance {
+  padding: 30px 40px;
+  height: 37px;
+  color: #000;
+  font-size: 24px;
+  background: #fff;
+}
+.scroll-wrapper .wrapper .balance:before,
+.scroll-wrapper .wrapper .balance:after {
+  content: " ";
+  display: table;
+}
+.scroll-wrapper .wrapper .balance:after {
+  clear: both;
+}
+.scroll-wrapper .wrapper .balance .balance-name {
+  float: left;
+}
+.scroll-wrapper .wrapper .balance .balance-num {
+  float: right;
+}
+.scroll-wrapper .wrapper .form {
+  border-top: 10px solid #f5f9fa;
+}
+.scroll-wrapper .wrapper .form .form-item {
+  padding: 30px 40px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 24px;
+  background: #fff;
+}
+.scroll-wrapper .wrapper .form .form-item:before,
+.scroll-wrapper .wrapper .form .form-item:after {
+  content: " ";
+  display: table;
+}
+.scroll-wrapper .wrapper .form .form-item:after {
+  clear: both;
+}
+.scroll-wrapper .wrapper .form .form-item .form-left {
+  float: left;
+  width: 55%;
+  height: 100%;
+}
+.scroll-wrapper .wrapper .form .form-item .form-left .form-input {
+  display: block;
+  width: 100%;
+  height: 30px;
+  padding: 16px 15px;
+  font-size: 24px;
+  line-height: 30px;
+  background: #eeeeee;
+  border-radius: 10px;
+}
+.scroll-wrapper .wrapper .form .form-item .form-left .form-input::-webkit-input-placeholder {
+  color: #aaa9a9;
+}
+.scroll-wrapper .wrapper .form .form-item .form-right {
+  float: right;
+  width: 25%;
+  height: 100%;
+}
+.scroll-wrapper .wrapper .form .form-item .form-right .form-btn {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  border-radius: 10px;
+  background: #d8351d;
+}
+.scroll-wrapper .wrapper .prompt {
+  padding: 0 40px;
+  font-size: 24px;
+  line-height: 40px;
+  color: #666666;
+}
+.scroll-wrapper .wrapper .form-submit {
+  margin-top: 100px;
+}
